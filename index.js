@@ -18,6 +18,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
     myMap.events.add('click', function(event) {
       const coords = event.get('coords');
+      const description = document.querySelector('.description');
+      description.style.display = 'none';
       openBalloon(myMap, coords);
     })
   }
