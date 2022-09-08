@@ -22,10 +22,6 @@ document.addEventListener('DOMContentLoaded', () => {
       description.style.display = 'none';
       openBalloon(myMap, coords);
     })
-
-    myMap.balloon.events.add('click', function(event) {
-      event.preventDefault();
-   });
   }
 })
 
